@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>YOU'RE DRUNK!</title>
+</head>
+<body>
+
+    <ul>
+        <% @breweries.each do |brewery|%>
+            <li><a href=<%="/breweries/#{brewery.id}"%>><%= brewery.name %></a></li>
+        <% end %>
+    </ul>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WHERE'S MY WIFE?!?!</title>
+</head>
+<body>
+    <form action="/beers" method="POST">
+        <input type="text" name="name">
+        <label for="name">Name Your Burr</label>
+        <select name="brewery_id">
+            <% Brewery.all.each do |brewery| %>
+            <option value="<%=brewery.id%>"><%=brewery.name%></option>
+            <% end %>       
+        </select>
+        <label for="brewery">Brewery</label>
+        <input type="text" name="blurb">
+        <label for="blurb">Explain yourself!</label>
+        <input type="submit" value="MAKE IT ALIVE!!!">
+    </form>
+</body>
+</html>

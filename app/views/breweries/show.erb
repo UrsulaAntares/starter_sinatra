@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>YOU HAVEN'T REACHED YOUR D.A.R.E. ABV LIMIT</title>
+</head>
+<body>
+
+    <h1><%= @brewery.name %></h1>
+    <h2><%= @brewery.location %></h2>
+        <p><%= @brewery.blurb %></p>
+        <ul>
+            <% @brewery.beers.each do |beer| %>
+            <li><a href=<%="/beers/#{beer.id}"%>> <%= beer.name %></a></li>
+            <% end %>
+        </ul>
+</body>
+</html>

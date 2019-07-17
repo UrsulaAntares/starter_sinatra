@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WHY HAVE YOU BECOME THIS?!</title>
+</head>
+<body>
+
+    <h1><%= @beer.name %></h1>
+    <h3><a href="/breweries/<%=@beer.brewery.id%>"><%= @beer.brewery.name %></a></h3>
+        <p>
+            <%= @beer.blurb %>
+        </p>
+</body>
+</html>

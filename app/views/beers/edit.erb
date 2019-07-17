@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>I REGRET EVERYTHING</title>
+</head>
+<body>
+    <form action="/beers/<%=@beer.id%>" method="POST">
+        <input type="hidden" name="_method" value="PATCH">
+        <input type="text" name="name" value="<%=@beer.name%>">
+        <label for="name">Name your beer, ya dum-dum</label>
+        <input type="text" name="blurb" value="<%=@beer.blurb%>">
+        <label for="blurb">EXPLAIN YOURSELF!!!</label>
+        <input type="submit" value="CREATE YE GODS">
+    </form>
+</body>
+</html>

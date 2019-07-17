@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MY CHILD WON'T EVEN TALK TO ME</title>
+</head>
+<body>
+    <form action="/breweries/<%=@brewery.id%>" method="POST">
+        <input type="hidden" name="_method" value="put">
+        <input type="text" name="name" value="<%=@brewery.name%>">
+        <label for="name">Name Your Brewery</label>
+        <input type="text" name="location" value="<%=@brewery.location%>">
+        <label for="location">Location</label>
+        <input type="text" name="blurb" value="<%=@brewery.blurb%>">
+        <label for="blurb">Tell Us About Yo' Brewery... PLEASE!!!</label>
+        <input type="submit" value="CREATE YE GODS">
+    </form>
+</body>
+</html>
