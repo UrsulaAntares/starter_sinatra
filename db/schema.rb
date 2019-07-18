@@ -10,12 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_07_17_155334) do
+ActiveRecord::Schema.define(version: 2019_07_18_165025) do
 
   create_table "beers", force: :cascade do |t|
     t.string "name"
     t.integer "brewery_id"
     t.string "blurb"
+    t.string "beer_style"
+    t.string "short_type"
+    t.integer "style_id"
+    t.string "icon"
+    t.string "link"
   end
 
   create_table "breweries", force: :cascade do |t|

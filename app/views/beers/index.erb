@@ -5,9 +5,11 @@
 </head>
 <body>
 
-    <ul>
+    <ul style="list-style-type:none;">
         <% @beers.each do |beer| %>
-            <li><a href=<%="/beers/#{beer.id}"%>><%= beer.name %></a></li>
+            <li style="display:inline-block; text-align: center; font-weight:bold; font-size:2em; font-family:arial; border:1px solid #ccc; width: 270px; height:340px; box-shadow:2px 11px 15px 0px #66c; padding:10px; margin:10px;"><a style="text-decoration: none; color:#999;" href=<%="/beers/#{beer.id}"%>>
+            <img src="<%=beer.icon%>" /> <br/>
+            <%= beer.name %></a></li>
         <% end %>
     </ul>
 

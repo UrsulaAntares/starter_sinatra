@@ -7,9 +7,9 @@ class BeersController < Sinatra::Base
         erb :index
     end
     
-        get '/beers/new' do
-            erb :new
-        end
+    get '/beers/new' do
+        erb :new
+    end
 
     get '/beers/:id' do 
         id = params[:id]
